@@ -1,4 +1,65 @@
-a:hover{
+/* پس‌زمینه کل صفحه */
+body {
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 20px;
+}
+
+/* لوگو */
+.logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+/* عنوان */
+h1 {
+    text-shadow: 2px 2px;
+}
+
+/* ورودی‌ها */
+input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* دکمه ثبت‌نام */
+.btn-signup {
+    background-color: rgb(55, 55, 240);
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* لینک Sign In */
+.signin-link {
+    color: rgb(27, 90, 27);
+    text-decoration: none;
+}
+
+.signin-link:hover {
     background-color: rgb(141, 241, 236);
     cursor: pointer;
+}
+
+/* ✅ ریسپانسیو */
+@media (max-width: 600px) {
+    input, .btn-signup {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }

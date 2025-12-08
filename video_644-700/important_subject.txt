@@ -1,14 +1,87 @@
-HTML Basic , HTML Elements , HTML Attributes
-HTML Headings
-HTML Text Formatting
-HTML Links
-HTML Images
-HTML Page Title
-HTML Tables
-HTML Lists
-HTML Buttons
-HTML Responsive Web Design
-HTML Forms
-HTML Display(video , oudio)
-HTML Semantic Elements
+ موضوعات HTML 
 
+    HTML Basic
+
+    HTML Elements
+
+    HTML Attributes
+
+    HTML Headings
+
+    HTML Text Formatting
+
+    HTML Links
+
+    HTML Images
+
+    HTML Page Title
+
+    HTML Tables
+
+    HTML Lists
+
+    HTML Buttons
+
+    HTML Forms
+
+    HTML Responsive Web Design
+
+موضوعات CSS
+
+    CSS Basic
+
+    CSS Selectors
+
+    CSS Colors
+
+    CSS Background
+
+    CSS Text Alignment
+
+    CSS Padding
+
+    CSS Margin
+
+    CSS Width & Height
+
+    CSS Borders
+
+    CSS Border Radius
+
+    CSS Fonts & Font Size
+
+    CSS Display
+
+    CSS Hover Effects
+
+    CSS Cursor
+
+    CSS Box Model
+
+    CSS Table Styling
+
+    CSS Responsive Design (Media Queries)
+
+    CSS Max‑Width
+
+    CSS Position (relative)
+
+    CSS Shadows (text-shadow)
+
+موضوعات مربوط به ریسپانسیو
+
+    Viewport Meta Tag
+
+    Media Queries
+
+    Responsive Images (max-width + height:auto)
+
+    Responsive Inputs & Buttons (width: 80% → 95%)
+
+    Responsive Tables (Stacked Table)
+
+    Mobile‑First Adjustments
+
+    Hiding Elements in Mobile (display:none)
+
+    Using data-label for mobile table layout
