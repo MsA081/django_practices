@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-6 text-blue-600">Sign In</h1>
+    <form class="space-y-4">
+
+      <!-- Username -->
+      <div class="flex items-center border border-gray-300 rounded-lg p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-6 8a6 6 0 1112 0H4z" />
+        </svg>
+        <input type="text" placeholder="Username" class="flex-1 outline-none">
+      </div>
+
+      <!-- Password -->
+      <div class="flex items-center border border-gray-300 rounded-lg p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M5 8a5 5 0 1110 0v2h1a1 1 0 011 1v7a1 1 0 01-1 1H4a1 1 0 01-1-1v-7a1 1 0 011-1h1V8zm2 2V8a3 3 0 116 0v2H7z" clip-rule="evenodd" />
+        </svg>
+        <input type="password" placeholder="Password" class="flex-1 outline-none">
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-center border border-gray-300 rounded-lg p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2.94 6.34a2 2 0 012.12-.16l5.94 3.3 5.94-3.3a2 2 0 012.12.16A2 2 0 0119 8.12V14a2 2 0 01-2 2H3a2 2 0 01-2-2V8.12a2 2 0 011.94-1.78z" />
+        </svg>
+        <input type="email" placeholder="Email" class="flex-1 outline-none">
+      </div>
+
+      <!-- Phone -->
+      <div class="flex items-center border border-gray-300 rounded-lg p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 3a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-.293.707L4.414 7.414a12.042 12.042 0 005.172 5.172l1.707-1.293A1 1 0 0112 11h2a1 1 0 011 1v2a1 1 0 01-1 1c-7.18 0-13-5.82-13-13a1 1 0 011-1z" />
+        </svg>
+        <input type="tel" placeholder="Phone" class="flex-1 outline-none">
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+        Sign In
+      </button>
+
+      <!-- Link -->
+      <p class="text-center mt-4">
+        <a href="sign_up.html" target="_blank" class="text-green-600 hover:underline hover:text-green-800">Don't have an account? Sign Up</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>
