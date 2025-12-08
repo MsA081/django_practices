@@ -1,0 +1,49 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, table * {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: coral;
+}
+
+/* ✅ حالت موبایل */
+@media (max-width: 600px) {
+
+    table th {
+        display: none; /* مخفی کردن TH ها */
+    }
+
+    tr, td{
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    td {
+        text-align: right;
+        padding: 8px 10px;
+        position: relative;
+    }
+
+    /* ✅ اضافه کردن عنوان TH قبل از هر TD */
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        color: #333;
+    }
+}
