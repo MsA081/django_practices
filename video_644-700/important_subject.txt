@@ -9,6 +9,6 @@ HTML Lists
 HTML Buttons
 HTML Responsive Web Design
 HTML Forms
-HTML PLAYER(video , oudio)
+HTML Display(video , oudio)
 HTML Semantic Elements
 
