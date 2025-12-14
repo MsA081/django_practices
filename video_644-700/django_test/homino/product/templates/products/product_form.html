@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="mb-4">
+    {% if object %}
+        ویرایش محصول: {{ object.name }}
+    {% else %}
+        ایجاد محصول جدید
+    {% endif %}
+</h1>
+
+<form method="post" enctype="multipart/form-data" class="card p-4 shadow-sm">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit" class="btn btn-success">ذخیره</button>
+    <a href="{% url 'product_list' %}" class="btn btn-secondary">بازگشت</a>
+</form>
+
+{% endblock %}

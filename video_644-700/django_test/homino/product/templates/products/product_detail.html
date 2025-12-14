@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>{{ product.name }}</h1>
+
+<img src="{{ product.image.url }}" alt="{{ product.name }}" class="img-fluid mb-3" style="max-width: 300px;">
+
+<p><strong>توضیحات:</strong> {{ product.description }}</p>
+<p><strong>قیمت:</strong> {{ product.price }} تومان</p>
+<p><strong>موجودی:</strong> {{ product.stock }}</p>
+<p><strong>دسته‌بندی:</strong> {{ product.category.name }}</p>
+<p><strong>قیمت کل (× تعداد):</strong> {{ product.total_price }}</p>
+
+<a href="{% url 'product_update' product.pk %}" class="btn btn-warning">ویرایش</a>
+<a href="{% url 'product_delete' product.pk %}" class="btn btn-danger">حذف</a>
+<a href="{% url 'product_list' %}" class="btn btn-secondary">بازگشت</a>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="mb-4">لیست محصولات</h1>
+
+<a href="{% url 'product_create' %}" class="btn btn-success mb-3">افزودن محصول جدید</a>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>نام</th>
+            <th>قیمت</th>
+            <th>موجودی</th>
+            <th>دسته‌بندی</th>
+            <th>عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }} تومان</td>
+            <td>{{ product.stock }}</td>
+            <td>{{ product.category.name }}</td>
+            <td>
+                <a href="{% url 'product_detail' product.pk %}" class="btn btn-primary btn-sm">مشاهده</a>
+                <a href="{% url 'product_update' product.pk %}" class="btn btn-warning btn-sm">ویرایش</a>
+                <a href="{% url 'product_delete' product.pk %}" class="btn btn-danger btn-sm">حذف</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5" class="text-center">هیچ محصولی یافت نشد.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
