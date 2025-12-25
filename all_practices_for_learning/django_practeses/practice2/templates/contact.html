@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}تماس با ما{% endblock %}
+{% block content %}
+    <h1>تماس با ما</h1>
+    <p>سلام {{ name }}! پیام شما دریافت شد.</p>
+    <form>
+        <input type="text" placeholder="نام">
+        <input type="email" placeholder="ایمیل">
+        <textarea placeholder="پیام"></textarea>
+        <button>ارسال</button>
+    </form>
+{% endblock %}
