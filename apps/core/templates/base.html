@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}هومینو{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'core:home' %}">خانه</a>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>کپی‌رایت ۲۰۲۴</p>
+    </footer>
+</body>
+</html>
