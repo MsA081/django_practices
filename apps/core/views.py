@@ -10,6 +10,7 @@
 #     # 2. Response: تحویل به تمپلیت
 #     return render(request, 'core/home.html', context)
 
+
 from django.views.generic import TemplateView
 
 class HomeView(TemplateView):
