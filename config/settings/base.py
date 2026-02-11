@@ -23,7 +23,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-
+    'core',
+    'services',
 ]
 
 # اپ‌ها و Middleware
